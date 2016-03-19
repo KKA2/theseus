@@ -1,0 +1,154 @@
+/***********************************************************/
+/* Theseus                                                 */
+/***********************************************************/
+
+/***********************************************************/
+/* Breaklines                                              */
+/***********************************************************/
+hr.custom {
+    padding-bottom: 5px;
+    max-width: 200px;
+    border-top: solid 5px;
+    text-align: center;
+}
+@media(min-width:768px) {
+    hr.custom {
+        max-width: 300px;
+    }
+}
+hr.light {
+    border-color: #998745;
+}
+hr.dark {
+    border-color: #041c42;
+}
+
+/***********************************************************/
+/* Links                                                   */
+/***********************************************************/
+a:link {
+    color: #ffffff;
+}
+a:visited {
+    color: #cccccc;
+}
+a:hover {
+    color: #cccccc;
+}
+a:active {
+    color: #999999;
+}
+a.nounderline {
+    text-decoration: none
+}
+
+/***********************************************************/
+/* Headers                                                 */
+/***********************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+/***********************************************************/
+/* Navigation Bar                                          */
+/***********************************************************/
+.navbar {
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #777777 !important;
+}
+/***********************************************************/
+/* Header Section                                          */
+/***********************************************************/
+header {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-align: center;
+    background: #f8f8f8;
+    color: #151515;
+}
+header .container {
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 20px;
+    padding-bottom: 25px;
+}
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    header .intro-text .name {
+        font-size: 3em;
+    }
+    header img {
+        width: 200px;
+        height: 200px;
+        padding-bottom: 50px;
+    }
+}
+
+/***********************************************************/
+/* General Sections                                        */
+/***********************************************************/
+section {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 50px 25px;
+}
+section .code-width {
+    margin: 0 auto;
+    width: 300px;
+}
+section .minimize {
+    text-align: center;
+    max-width: 450px;
+    margin:0 auto;
+}
+section .minimize p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1em;
+}
+
+/***********************************************************/
+/* Footer                                                  */
+/***********************************************************/
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+footer .credit {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color: #151515;
+}
+footer .credit-info {
+    font-size: .8em;
+}
