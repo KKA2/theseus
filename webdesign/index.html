@@ -1,3 +1,10 @@
+<!-- 
+    Theseus
+    index.html
+    Ann Keenan
+        Kate Barlock, Katricia Herring
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -77,14 +84,14 @@
             <div class="container">
                 <h2 class="dark">Map</h2>
                 <hr class="custom light">
-                <h4><strong>Floor 10</strong><br></h4>
-                <img id="book-floor" src="img/floors/hesburgh10.jpg">
-                <div class="well well-lg minimize">
-                <p><strong>Title:</strong></p>
-                <p id="book-title">Book Title</p>
-                <p><strong>Author:</strong></p>
-                <p id="book-author">Book Author</p>
-            </div>
+                <h4 id="book-floor" class="hidden"><strong>Floor</strong><br></h4>
+                <img id="book-floor-image" src="img/campus-map.jpg">
+                <div id="book-info" class="well well-lg minimize hidden">
+                    <p><strong>Title:</strong></p>
+                    <p id="book-title">Book Title</p>
+                    <p><strong>Author:</strong></p>
+                    <p id="book-author">Book Author</p>
+                </div>
             </div>
         </section>
 
@@ -115,5 +122,6 @@
         <!-- custom -->
         <script src="js/submit.js"></script>
         <script src="js/theseus.js"></script>
+        <script src="jquery.alerts.js"></script>
     </body>
 </html> 
