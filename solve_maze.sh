@@ -13,6 +13,9 @@ if [ ! -d ./$TMP_DIR ] ; then
 	mkdir ./$TMP_DIR
 fi
 
+if [ ! -d ./out ] ; then
+	mkdir ./out
+fi
 SORT="sort -V"
 #if   ! ls tmp/*.jpg | $SORT >/dev/null 2>&1; then
 #	SORT="sort -k1"

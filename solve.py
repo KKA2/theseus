@@ -31,6 +31,7 @@ class Solver:
     def __init__(self, maze):
         # Colors.
         self.COLOR_RED = (255,0,0)
+	self.COLOR_CHOICE = (4, 28, 66)
         self.COLOR_GREEN = (0,255,0)
         self.COLOR_BLUE = (0,0,255)
         self.COLOR_WHITE = (255,255,255)
@@ -90,7 +91,9 @@ class Solver:
         # Draw solution path.
         for position in path:
             x,y = position
-            self.pixels[x,y] = self.COLOR_RED   
+	    self.pixels[x+6,y-6] = self.COLOR_RED 
+            self.pixels[x+5,y-5] = self.COLOR_RED  
+	    self.pixels[x+4,y-4] = self.COLOR_RED  
         
         self.image.save(self.file_out)
         logging.info("Solution saved as '{0}'.".format(self.file_out))
