@@ -43,9 +43,15 @@
                 <!-- links -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="page-scroll"><a data-scroll href="#find">Find</a></li>
-                        <li class="page-scroll"><a data-scroll href="#map">Map</a></li>
-                        <li class="page-scroll"><a data-scroll href="#about">About</a></li>
+                        <li class="page-scroll">
+                            <a data-scroll href="#find">Find</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a data-scroll href="#map">Map</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a data-scroll href="#about">About</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -72,10 +78,10 @@
                 <hr class="custom dark">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="code">Book Code</label>
+                        <label for="code">LCC Call Number</label>
                         <input type="text" class="form-control code-width" id="book-code" placeholder="Example: E 743.5 .H43 2011">
                     </div>
-                    <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                    <button type="submit" class="btn btn-default" id="submit">Search</button>
                 </form>
             </div>
         </section>
@@ -104,11 +110,16 @@
         </section>
 
         <!-- footer -->
-        <footer class="text-center">
+        <footer id="credits" class="text-center">
             <div class="credit">
-                <p class="credit-info">2016 <i class="fa fa-copyright"></i> 
-                    University of Notre Dame, Hesburgh Libraries</a>
-                </p>
+                Courtesy of the 2016 Hesburgh Hack-A-Thon<br>
+                Using the maze solver algorithm by <a href="https://github.com/scharissis/maze-solver-python">scharissis</a><br>
+                Designed with <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a> and <a href="http://fontawesome.io/ ">Font Awesome</a><br><br>
+                Creators: Kate Barlock, Katricia Herring, and Ann Keenan
+            </div>
+            <div class="copyright">
+                2016 <i class="fa fa-copyright"></i> 
+                University of Notre Dame, Hesburgh Libraries</a>
             </div>
         </footer>
 
@@ -119,6 +130,8 @@
         <!-- plugins -->
         <script src="js/smooth-scroll.min.js"></script>
         <script>smoothScroll.init();</script>
+        <script src="js/classie.js"></script>
+        <script src="js/cbpAnimatedHeader.js"></script>
         <!-- custom -->
         <script src="js/submit.js"></script>
         <script src="js/theseus.js"></script>
