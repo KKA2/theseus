@@ -17,7 +17,7 @@ $(document).ready(function() {
         // hard coding of two potential options
         if (code == 'E 743.5 .H43 2011') {
             $('#book-floor').text('Floor 10');
-            $('#book-floor-image').attr("src","img/floors/hesburgh10key2.jpg");
+            $('#book-floor-image').attr("src","img/hesburgh10key2.jpg");
             $('#book-title').text('What\'s Fair On The Air?');
             $('#book-author').text('Heather Hendershot');
         }
