@@ -1,0 +1,22 @@
+{
+    "version": 8,
+    "name": "Empty",
+    "sources": {},
+    "sprite": "mapbox://sprites/kbarlock/cilzaanpo00159sm29t7nkgy5",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "rgba(0,0,0,0)"
+            },
+            "interactive": true
+        }
+    ],
+    "created": "2016-03-19T15:23:12.808Z",
+    "id": "cilzaanpo00159sm29t7nkgy5",
+    "modified": "2016-03-19T15:23:12.808Z",
+    "owner": "kbarlock",
+    "draft": false
+}
