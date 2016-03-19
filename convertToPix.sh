@@ -20,10 +20,15 @@ shift $(($OPTIND -1))
 
 i=0
 for section in $1
-do
 	array[i]="$section"
 	i=$((i + 1))
 done
 
 #NOTE: $0 gives subject (ex. PS); $1 is first set of numbers
 echo ${array[0]}
+
+#find appropriate floor and corresponding image
+
+#hard coded ranges here (eg hesburgh[10
+
+#each corresponding range has 
