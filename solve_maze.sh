@@ -5,6 +5,10 @@
 
 TMP_DIR=tmp
 MAZE=$1
+#End coordinates
+X_COORD=$2
+Y_COORD=$3
+
 MAZE_NAME=$(basename "$MAZE")
 OUT_GIF=out/${MAZE_NAME%.*}.gif
 OUT_VID=out/${MAZE_NAME%.*}.avi
@@ -33,7 +37,7 @@ python solve.py $MAZE
 if [ $? -ne 0 ]; then exit 1; fi
 
 echo -n 'Generating AVI...'
-avconv -r 10 -i $TMP_DIR/%5d.jpg $OUT_VID 2> /dev/null
+avconv -r 1 -i $TMP_DIR/%5d.jpg $OUT_VID 2> /dev/null
 echo -e "\t$OUT_VID"
 
 echo -n 'Generating GIF...'

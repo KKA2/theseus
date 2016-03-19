@@ -20,7 +20,8 @@ shift $(($OPTIND -1))
 
 i=0
 for section in $1
-	classific[i]="$section"
+do
+	classific[i]=$section
 	i=$((i + 1))
 done
 
@@ -28,23 +29,37 @@ done
 echo ${classific[0]}
 
 #find appropriate floor number based on subject code
-if [ ${classific[0]} = "DG" ]; then
+if [ "${classific[0]}" = "DG" ]; then
 	floornum=7
-else if [[ ${classific[0]} <= "BR" -a  "B" <= ${classific[0]} ]]; then #need to check that is above B though
-	floornum=13
-else if [[ ${classific[0]} <= "BX" -a  "BS" <= ${classific[0]} ]]; then
-	floornum=12
-else if [[ ${classific[0]} <= "DR" -a  "BX" <= ${classific[0]} ]]; then
-	floornum=11
-else if [[ ${classific[0]} <= "F" -a  "DS" <= ${classific[0]} ]]; then
-	floornum=10
-else if [[ ${classific[0]} <= "PM" -a  "JS" <= ${classific[0]} ]]; then
-	floornum=8
-else if [[ ${classific[0]} <= "PQ" -a  "PN" <= ${classific[0]} ]]; then
-	floornum=5
-else if [[ ${classific[0]} <= "PZ" -a  "PR" <= ${classific[0]} ]]; then
-	floornum=9
-else 
+elif [ [ "${classific[0]}" <= "BR" ] ]
+	if [ [ "B" <= ${classific[0]} ] ]; then 
+		floornum=13
+	fi
+elif [ [ "${classific[0]}" <= "BX" ] ]
+	if [ [ "BS" <= ${classific[0]} ] ] ; then
+		floornum=12
+	fi
+elif [ [ ${classific[0]} <= "DR" ] ]; then
+	if [ [  "BX" <= ${classific[0]} ]] ; then
+		floornum=11
+	fi
+elif [ [ ${classific[0]} <= "F" ] ]; then
+	if [ [ "DS" <= ${classific[0]} ]] ; then
+		floornum=10
+	fi
+elif [ [ ${classific[0]} <= "PM" ] ]; then
+	if [ [  "JS" <= ${classific[0]} ]] ; then
+		floornum=8
+	fi
+elif [ [ ${classific[0]} <= "PQ" ] ]; then
+	if [ [ 0  "PN" <= ${classific[0]} ]] ; then
+		floornum=5
+	fi
+elif [ [ ${classific[0]} <= "PZ" ] ]; then  
+	if [ [ "PR" <= ${classific[0]} ]] ; then
+		floornum=9
+	fi
+else
 	floornum=0
 fi
 
