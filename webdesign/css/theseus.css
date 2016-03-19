@@ -117,7 +117,7 @@ header .intro-text .name {
 section {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    padding: 50px 25px;
+    padding: 40px 0px;
 }
 section .code-width {
     margin: 0 auto;
@@ -127,13 +127,13 @@ section .minimize {
     text-align: center;
     max-width: 450px;
     margin:0 auto;
-}
-section .minimize p {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: #fff;
     font-size: 1em;
+}
+section img {
+    padding-bottom: 25px;
+}
+section .hidden {
+    visibility: hidden;
 }
 
 /***********************************************************/
