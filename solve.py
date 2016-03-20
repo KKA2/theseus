@@ -42,7 +42,7 @@ class Solver:
         
         # TODO: START/END is currently hardcoded for 'hesburgh10.jpg'.
         self.START = (320,260)
-        self.END = (40,120)    
+        self.END = (275,302)    
     
         # Output file.
         self.DIR_OUT = 'out'
@@ -75,8 +75,8 @@ class Solver:
                 r,g,b = self.pixels[i,j]
                 if r > th and g > th and b > th:
                     self.pixels[i,j] = self.COLOR_WHITE
-                else:
-                    self.pixels[i,j] = self.COLOR_BLACK
+                #else:
+                   #self.pixels[i,j] = self.COLOR_BLACK
                 
     def solve(self):
         logging.info('Solving...')
