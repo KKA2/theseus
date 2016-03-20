@@ -10,6 +10,12 @@ $(document).ready(function() {
         target: '.navbar-fixed-top'
     });
 
+    $(document).ready(function () {
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+    });
+
     var code;
     $('#submit').click(function() {
         // store contents of text field
